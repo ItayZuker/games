@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
-import RandomSquareBox from './random_squere_box/random_squere_box.js';
+import RandomSquareBoxGame from './random_squere_box/random_squere_box_game.js';
+import { RandomSquareBoxContextComponent } from '../../../global_context/random_square_box_context';
 import './game.scss'
 
 const Game = () => {
@@ -9,8 +10,12 @@ const Game = () => {
 
     return (
         <div className='game_container'>
-            { game === undefined ? <RandomSquareBox /> : null }
-            { game === 'random-square-box' ? <RandomSquareBox /> : null }
+            <RandomSquareBoxContextComponent>
+                { game === undefined ? <RandomSquareBoxGame /> : null }
+            </RandomSquareBoxContextComponent>
+            <RandomSquareBoxContextComponent>
+                { game === 'random-square-box' ? <RandomSquareBoxGame /> : null }
+            </RandomSquareBoxContextComponent>
         </div>
     )
 }

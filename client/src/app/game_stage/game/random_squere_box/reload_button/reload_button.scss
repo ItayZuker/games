@@ -1,0 +1,29 @@
+@import "./src/assets/styles/global_random_square_box_variables.scss";
+
+.reload_button_container {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3px;
+    color: $color_font_one;
+    background-color: $color_one;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: transform .2s;
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-0.1rem);
+
+    }
+    &:active {
+        transform: translateY(0.3rem);
+        background-color: $color_two;
+
+    }
+    > h4 {
+        color: $color_font_two;
+        user-select: none;
+
+    }
+}

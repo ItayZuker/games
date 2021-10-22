@@ -3,7 +3,7 @@ const GlobalContext = React.createContext();
 
 const GlobalContextComponent = (props) => {
 
-    let [test, setTest] = useState('123')
+    let [test, setTest] = useState('lalalal')
 
     const contextValue = {
         test,

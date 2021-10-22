@@ -1,0 +1,57 @@
+.square_container {
+    width: 100px;
+    height: 100px;
+    padding: 0.2rem;
+    position: relative;
+    z-index: 2;
+    .square {
+        background-color: gray;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in-out;
+        > h3 {
+            color: white;
+        }
+        &.bingo {
+            transform: scale(0);
+
+        }
+        &:not(.clicked):hover {
+            cursor: pointer;
+            transform: scale(0.9);
+            opacity: 0.7;
+
+        }
+        &.clicked {
+            pointer-events: none;
+            &.color_one {
+                background-color: #1180AE;
+            }
+            &.color_two {
+                background-color: #6D5B97;
+            }
+            &.color_three {
+                background-color: #FCB239;
+            }
+            &.color_four {
+                background-color: #D74061;
+            }
+            &.color_five {
+                background-color: #F37A29;
+            }
+            &.color_six {
+                background-color: #B66BA3;
+            }
+            &.color_seven {
+                background-color: #D2B356;
+            }
+            &.color_eight {
+                background-color: #C59169;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/* color settings */
+
+$color_one: rgba(0, 0, 255, 1);
+$color_two: rgba(255, 0, 0, 1);
+$color_three: rgba(0, 255, 0, 1);
+$color_font_one: rgba(100, 100, 100, 1);
+$color_font_two: rgba(255, 255, 255, 1);
+
+/* typography settings */
+
+$font_family: 'Roboto', sans-serif;
+
+html {
+    body {
+        font-size: 16px;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: $font_family;
+            color: $color_font_one;
+            font-weight: 400;
+
+        }
+        h1 {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+
+        }
+        h2 {
+            font-size: 2rem;
+            line-height: 2rem;
+
+        }
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+
+        }
+        h4 {
+            font-size: 1rem;
+            line-height: 1rem;
+
+        }
+        h5 {
+            font-size: 1rem;
+            line-height: 1rem;
+
+        }
+        h6 {
+            font-size: 1rem;
+            line-height: 1rem;
+
+        }
+    }
+}
